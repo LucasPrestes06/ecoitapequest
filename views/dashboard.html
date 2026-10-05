@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EcoItape — Dashboard da Pesquisa</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head><body>
+<header class="topo"><strong>EcoItape</strong><span class="espaco"></span><button class="btn sec" id="sair" type="button">Sair</button></header>
+<main class="painel">
+  <h1>EcoItape — Dashboard da Pesquisa</h1>
+  <div class="barra-acoes">
+    <button class="btn" id="atualizar" type="button">Atualizar resultados</button>
+    <select id="filtro" aria-label="Filtrar por pergunta"></select>
+  </div>
+  <div class="total"><small>Total de respostas</small><b id="total">–</b></div>
+  <div class="grade-cards" id="cards"></div>
+  <div class="cartao destaques"><h2 style="font-size:1.2rem;color:var(--floresta)">Principais resultados</h2><ul id="destaques"></ul></div>
+  <h2 class="secao">Resultados por pergunta</h2>
+  <div class="grade-graficos" id="graficos"></div>
+  <h2 class="secao">Respostas individuais</h2>
+  <div class="cartao"><div class="tabela" id="tabela"></div>
+    <div class="pagina"><button class="btn sec" id="ant" type="button">Anterior</button><span id="pag"></span><button class="btn sec" id="prox" type="button">Próxima</button></div></div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script src="/js/dashboard.js"></script>
+</body></html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Login Administrativo — EcoItape</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head><body>
+<header class="topo"><strong>EcoItape</strong></header>
+<main class="login">
+  <div class="cartao">
+    <h1 style="font-size:1.6rem;color:var(--floresta);margin-bottom:1rem">Login Administrativo</h1>
+    <form id="form" novalidate>
+      <div class="campo"><label for="login">Login</label><input id="login" autocomplete="username" required></div>
+      <div class="campo"><label for="senha">Senha</label><input id="senha" type="password" autocomplete="current-password" required></div>
+      <p class="erro" id="erro" role="alert"></p>
+      <button class="btn" style="width:100%" type="submit">Entrar</button>
+    </form>
+    <p style="margin:1rem 0 0;text-align:center"><a href="/">Voltar à pesquisa</a></p>
+  </div>
+</main>
+<script src="/js/admin.js"></script>
+</body></html>

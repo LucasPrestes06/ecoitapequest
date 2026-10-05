@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EcoItape — Pesquisa sobre Reciclagem</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head><body>
+<header class="topo">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 19H4l3-5M7 19l-2-4M10 5l2-3 3 5M12 2l3 5h-3M17 11l3 5-5 .5M20 16l-3 4M14 20l-3-5"/></svg>
+  <strong>EcoItape</strong>
+</header>
+<main class="container">
+  <section class="hero" id="intro">
+    <h1>EcoItape — Pesquisa sobre Reciclagem</h1>
+    <p>Ajude-nos a entender o conhecimento da população sobre os pontos de reciclagem da cidade.</p>
+    <div class="aviso"><span aria-hidden="true">🔒</span><span><strong>Pesquisa anônima.</strong> Não pedimos nome, e-mail, telefone nem login. São 14 perguntas rápidas.</span></div>
+  </section>
+  <section class="cartao" id="formulario" aria-live="polite">
+    <div class="progresso-info"><span id="rotulo">Carregando…</span><span id="percentual"></span></div>
+    <div class="barra" role="progressbar" aria-valuemin="0" aria-valuemax="100"><div id="preenchimento"></div></div>
+    <div id="area"></div>
+    <p class="erro" id="erro" role="alert"></p>
+    <div class="botoes">
+      <button class="btn sec" id="anterior" type="button">Anterior</button>
+      <button class="btn" id="proxima" type="button">Próxima</button>
+    </div>
+  </section>
+  <section class="cartao sucesso oculto" id="sucesso">
+    <h2>Pesquisa enviada com sucesso!</h2>
+    <p>Obrigado por participar da pesquisa EcoItape. Sua resposta ajudará a entender melhor o acesso da população às informações sobre reciclagem.</p>
+  </section>
+</main>
+<footer class="rodape"><a href="/admin-login">Área do responsável pela pesquisa</a></footer>
+<script src="/js/pesquisa.js"></script>
+</body></html>

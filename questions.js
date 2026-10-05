@@ -1,0 +1,32 @@
+// Fonte única das perguntas: usada para validar respostas, montar o formulário e os gráficos.
+const PERGUNTAS = [
+  { id: 1, tipo: 'single', grafico: 'doughnut', titulo: 'Você pratica a separação de materiais recicláveis em sua casa?',
+    opcoes: ['Sempre', 'Frequentemente', 'Às vezes', 'Raramente', 'Nunca'] },
+  { id: 2, tipo: 'single', grafico: 'bar', titulo: 'Você sabe quais materiais podem ser reciclados?',
+    opcoes: ['Sim, sei identificar a maioria', 'Sei identificar alguns', 'Tenho poucas informações', 'Não sei'] },
+  { id: 3, tipo: 'single', grafico: 'pie', titulo: 'Você conhece algum ponto de reciclagem ou coleta de materiais recicláveis na cidade?',
+    opcoes: ['Sim', 'Não', 'Não tenho certeza'] },
+  { id: 4, tipo: 'single', grafico: 'bar', titulo: 'Quantos pontos de reciclagem da cidade você conhece?',
+    opcoes: ['Nenhum', '1', '2 a 3', '4 ou mais', 'Não sei informar'] },
+  { id: 5, tipo: 'single', grafico: 'doughnut', titulo: 'Você sabe onde está localizado pelo menos um ponto de reciclagem?',
+    opcoes: ['Sim', 'Não', 'Tenho uma ideia, mas não sei exatamente onde'] },
+  { id: 6, tipo: 'single', grafico: 'bar', titulo: 'Você já levou materiais recicláveis a algum ponto de reciclagem da cidade?',
+    opcoes: ['Sim, várias vezes', 'Sim, uma ou duas vezes', 'Nunca', 'Não sabia que existiam esses pontos'] },
+  { id: 7, tipo: 'single', grafico: 'bar', titulo: 'Com que frequência você utiliza pontos de reciclagem?',
+    opcoes: ['Toda semana', 'Algumas vezes por mês', 'Raramente', 'Nunca', 'Não conheço nenhum ponto'] },
+  { id: 8, tipo: 'single', grafico: 'barH', titulo: 'Como você ficou sabendo da existência de pontos de reciclagem?',
+    opcoes: ['Redes sociais', 'Amigos ou familiares', 'Escola/faculdade', 'Prefeitura', 'Internet', 'Vi o local pessoalmente', 'Outro', 'Não conheço nenhum'] },
+  { id: 9, tipo: 'single', grafico: 'barH', titulo: 'Qual é a principal dificuldade que impede você de levar materiais recicláveis a um ponto de coleta?',
+    opcoes: ['Não conheço os locais', 'Os pontos são muito distantes', 'Não sei quais materiais são aceitos', 'Falta de tempo', 'Não tenho o hábito', 'Não vejo necessidade', 'Não tenho dificuldade', 'Outro'] },
+  { id: 10, tipo: 'single', grafico: 'pie', titulo: 'Você considera que existem pontos de reciclagem suficientes na cidade?',
+    opcoes: ['Sim', 'Não', 'Não sei informar'] },
+  { id: 11, tipo: 'single', grafico: 'doughnut', titulo: 'Você considera fácil encontrar informações sobre os pontos de reciclagem da cidade?',
+    opcoes: ['Sim', 'Mais ou menos', 'Não', 'Nunca procurei essas informações'] },
+  { id: 12, tipo: 'single', grafico: 'bar', titulo: 'Se existisse um site ou aplicativo mostrando os pontos de reciclagem da cidade, você utilizaria?',
+    opcoes: ['Com certeza', 'Provavelmente sim', 'Talvez', 'Provavelmente não', 'Não utilizaria'] },
+  { id: 13, tipo: 'multi', grafico: 'barH', titulo: 'O que você gostaria de encontrar nesse aplicativo/site? (marque quantas quiser)',
+    opcoes: ['Localização dos pontos de reciclagem', 'Horário de funcionamento', 'Materiais aceitos em cada ponto', 'Rotas para chegar ao local', 'Telefone/contato', 'Informações sobre reciclagem', 'Avisos sobre novos pontos', 'Outra informação'] },
+  { id: 14, tipo: 'single', grafico: 'doughnut', titulo: 'Você acha que ter informações mais acessíveis sobre os pontos de reciclagem faria você reciclar mais?',
+    opcoes: ['Sim', 'Talvez', 'Não', 'Já reciclo independentemente dessas informações'] }
+];
+module.exports = { PERGUNTAS };
